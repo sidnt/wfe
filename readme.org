@@ -6,10 +6,12 @@
 - Error Messages should be accurate
 - Feedbacks should be swift, brief and succint
 - Transitions shouldn't disorient the user
-- 
+
+
 - Try to absorb most of the functionality within the keyboard
 - The key-to-function rules must be as few as possible.
-- 
+
+
 - Try lifting directly, ui patterns probably recognized by our target persona.
 
 
