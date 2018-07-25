@@ -73,7 +73,7 @@
 
 - I have added quite a many steps. In the expanded view, I scroll down to reach the end. I scroll more and lo,
 
-  - The controls (Edit Move Delete) on a step card scroll above the WFE header. This is a code-bug. The card controls could use a redesign. SHOW
+  - The controls (Edit Move Delete) on a step card scroll above the WFE header. See [[https://youtu.be/taHmsLvX_xU][this-w9]]. This is a code-bug. The card controls could use a redesign. Something like [[https://raw.githubusercontent.com/sidnt/wfe/master/p7.png][this-p7]].
 
   - the background website, which is in the dark, starts scrolling beneath the editor. This is additional unrequired motion that doesn't serve any useful purpose. Anyway, that scroll is locked when my mouse pointer is outside, and in the darkened area, so this is likely a code-bug.
 
