@@ -53,7 +53,7 @@
 
       - I notice two tiers of required information. 'Describe the step*' and 'Anything important to note'. What differentiation is implied? Could something like 'Name this step*' and 'Describe the step' be more useful?
 
-      - What if we made the visual hierarchy (as in the font of the heading and of the description) mirror that of the final presentation. What if we made the tier two information, similarly in small font and italicized as in the final card? The input makes them feel of similar importance while the output does some kind of differentiation. like [[https://raw.githubusercontent.com/sidnt/wfe/master/p4.png][this-p4]].
+      - What if we made the visual hierarchy (as in the font of the heading and of the description) mirror that of the final presentation. What if we made the tier two information, similarly in small font and italicized as in the final card? The input makes them feel of similar importance while the output does some kind of differentiation. Anyway currently, with its current font sizing, it competes with the tier1 text. Suggestion - like [[https://raw.githubusercontent.com/sidnt/wfe/master/p4.png][this-p4]].
 
     - and 'Add Step'
 
@@ -61,15 +61,15 @@
 
       - If there's no internet, the error message reads, 'Failed to save step. Contact your success manager.' which is inaccurate. Also, this behaviour isn't repeated when an edit is made to any step, with net disconnected, in which case, it dismisses the edit step screen but but indicates the pending changes via 'Saving changes...' and the message doesn't go automatically even when connection is restored after this. Probably a code-bug.
 
-    - and shows me correctly, how the annotation would look on the actual website. Correctly, ie, with arrow pointing towards the referred element, with the 'Purpose of the flow' and with the step x of y.
+    - and WFE shows me correctly, how the annotation would look on the actual website. Correctly, ie, with arrow pointing towards the referred element, with the 'Purpose of the flow' and with the step x of y.
 
       - However, on the annotation component,
         - close button is anyway redundant wrt the 'x'
         - like [[https://raw.githubusercontent.com/sidnt/wfe/master/p5.png][this-p5]]
       
-    - Now I 'Close' this preview. It doesn't take me back to where I came from. This might confuse the newer users slightly, and might not be a problem with the more expert users who know their way around.
+    - Now I 'close' this preview. It doesn't take me back to where I came from, ie, the expanded editor. Naturally the expectation on the user is that they know what is required to add the next step. Wich is via the minimized header. This might confuse the newer users slightly, and might not be a problem with the more expert users who know their way around.
 
-      Anyway, I expand to bring up the editor, but when I look at it in the expanded WFE, the arrow is gone, though the screenshot is correct. The 'Purpose of this flow' is gone as well. This feedback is useful, in case we want the designer of the flow to know how their 'Purpose of the flow' text will look like on actual elements that will be presented to the user, and so they might want to rephrase it accordingly.
+      Anyway, I expand to bring up the editor, but when I look at it in the expanded WFE, the arrow is gone, though the screenshot is correct. The 'Purpose of this flow' is gone from the component preview in the screenshot. This feedback is useful, in case we want the designer of the flow to know how their 'Purpose of the flow' text will look like on actual elements that will be presented to the user, and so they might want to rephrase it accordingly. LIke [[https://raw.githubusercontent.com/sidnt/wfe/master/p6.png][this-p6]].
 
 - I have added quite a many steps. In the expanded view, I scroll down to reach the end. I scroll more and lo,
 
