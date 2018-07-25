@@ -17,15 +17,19 @@
 
 ** My Journey Components
 
-- I open the WFE to make a new flow. I write the 'Purpose' and immediately notice a 'Saving changes...' message appears, and disappears as soon as the changes are saved. It'd be better, to use a spinner with a save icon, with some motion design, to make that communication more efficient. [[https://raw.githubusercontent.com/sidnt/wfe/master/1.png][SHOW]].
+- I open the WFE to make a new flow. I write the 'Purpose' and immediately notice a 'Saving changes...' message appears, and disappears as soon as the changes are saved. It'd be better, to use a spinner with a save icon, with some motion design, to make that communication more efficient. [[https://raw.githubusercontent.com/sidnt/wfe/master/1.png][SHOW-1]].
 
   The persisting of state to the server, is an important thing to be communicated to the user, so what if it was given a permanent place in the app's minimized header. If internet disconnects, eg, a rotating spinner over a save icon with a tooltip, 'trying to save' will give the user a more immediate connection to the state of the application. Currently, if the internet disconnects, the 'Saving changes...' message stays without any activity.
 
-- In the WFE, I wanted to create a new tag for my new flow. But I wasn't able to do so. Though I was able to make out that I didn't select a tag from the list, WFE's feedback wasn't constructive, in that, neither did it tell me what did I do wrong, nor did it show me the right way to do it. Also, the feedback message came late and went late. [[https://youtu.be/oDQYo6rC9xU][SHOW]] 
+- In the WFE, I wanted to create a new tag for my new flow. 
 
-- I wrote a legit tag and pressed enter. Argh. The view jumped upwards and I had to spend some attention orienting myself again to the new arrangement.
+  - I wrote a made up tag and hit 'enter'. Argh. The view jumped upwards and I had to spend some attention orienting myself again to the new arrangement.
 
-  I want to add the next tag. On an empty tag input box, I press enter, and it adds the first tag in the automatically-opened tag list, and opens the list again. I arrow-key navigate to the some item in the list, there's a 'selector' visual cue that tells me about the current selection. I press enter and that tag is added.
+    - And the tag wasn't added. Though I was able to make out that probably it was because I didn't select a tag from the list, WFE's feedback wasn't constructive, in that, neither did it tell me what did I do wrong, nor did it show me the right way to do it. Also, the feedback message came late and went late. [[https://youtu.be/oDQYo6rC9xU][SHOW-w1]]
+
+  - I wrote a simple hello tag. And the view jumped like [[https://youtu.be/TGcrsExMd94][this-w4]]. Also scrolling down, it jerks at a certain point, like [[https://youtu.be/vUVblVRmJZ8][this-w2]].
+
+  - I want to add the next tag. On an empty tag input box, I press enter, and it adds the first tag in the automatically-opened tag list, and opens the list again. I arrow-key navigate to the some item in the list, there's a 'selector' visual cue that tells me about the current selection. I press enter and that tag is added.
   .
   Now, I enter few characters and the tag list narrows down. I navigate to the tag of my choice and press enter. Wha! The WFE gives me an error message (which itself comes&goes late) saying the tag wasn't created, when it clearly cued me in, (with the UI-rules acquired in the previous paragrph, and the visuals) that I could select any element in the list and 'enter' on it to add it to the list.
 
