@@ -34,7 +34,6 @@
 
 - I want to add my first step. I hit the +Step button. Now, I'm taken to a new view, where there's a whatfix header and seems like it's telling me to select an element. Ok. Though it'd be nice, if the fact the WFE is waiting on me to take the next step, stands out explicity in some visual cue of a different type, say a gracefully blinking message, 'select the element'. Like [[https://raw.githubusercontent.com/sidnt/wfe/master/p2b.png][this p2b]]. Anyway.
 
-
   - Now, I 'Cancel' at this point, (why?) WFE doesn't return back to the original state it started from. Instead, it stays minimized in its header form. This shouldn't be. When cancelling any step, it's always better to leave the user back to where they came from. [[https://youtu.be/3b3GtRX3wXs][see-w12]]
     
     However, even in this minimized header view, what functionalities can I access? I can
