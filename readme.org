@@ -17,11 +17,11 @@
 
 ** My Journey Components
 
-- I open the WFE to make a new flow. I write the 'Purpose' and immediately notice a 'Saving changes...' message appears, and disappears as soon as the changes are saved. It'd be better, to use a spinner with a save icon, with some motion design, to make that communication more efficient. SHOW.
+- I open the WFE to make a new flow. I write the 'Purpose' and immediately notice a 'Saving changes...' message appears, and disappears as soon as the changes are saved. It'd be better, to use a spinner with a save icon, with some motion design, to make that communication more efficient. [[https://raw.githubusercontent.com/sidnt/wfe/master/1.png][SHOW]].
 
   The persisting of state to the server, is an important thing to be communicated to the user, so what if it was given a permanent place in the app's minimized header. If internet disconnects, eg, a rotating spinner over a save icon with a tooltip, 'trying to save' will give the user a more immediate connection to the state of the application. Currently, if the internet disconnects, the 'Saving changes...' message stays without any activity.
 
-- In the WFE, I wanted to create a new tag for my new flow. But I wasn't able to do so. Though I was able to make out that I didn't select a tag from the list, WFE's feedback wasn't constructive, in that, neither did it tell me what did I do wrong, nor did it show me the right way to do it. Also, the feedback message came late and went late.
+- In the WFE, I wanted to create a new tag for my new flow. But I wasn't able to do so. Though I was able to make out that I didn't select a tag from the list, WFE's feedback wasn't constructive, in that, neither did it tell me what did I do wrong, nor did it show me the right way to do it. Also, the feedback message came late and went late. [[https://youtu.be/oDQYo6rC9xU][SHOW]] 
 
 - I wrote a legit tag and pressed enter. Argh. The view jumped upwards and I had to spend some attention orienting myself again to the new arrangement.
 
