@@ -83,20 +83,13 @@
 
     Also, visually, the 'RESELECT ELEMENT' button, doesn't fall in line with the button langugae that we're using in the UI. Probably we could set out a button language? Compare / contrast different buttons. TODO
 
-- When making a selection for 'When will this step complete?' the component that a step visually translates into, doesn't show that indication, except in the case where a click 'Next' is required to complete it, in which case there's a button directly on the component. Perhaps some visual/motion cues as to what's needed to be done, will be more helpful.
+- When making a selection for 'When will this step complete?' the component that a step visually translates into, doesn't show that indication, except in the case where a click 'Next' is required to complete it, in which case there's a button directly on the component. Perhaps some visual/motion cues as to what's needed to be done on the part of the viewer of the flow, will be more helpful.
 
 
 ** VD Improvements
 
-- Alignment in the header bar. DONE
-- Alignment in the tag input box with dropdown list. TODO
-
-- A VD overhaul?
-- VD of step descriptor in live preview
-
-
-** UI Bugs
-- In Maximized WFE, the screenshots of the selected element in the step, don't have the arrow pointer.
+- Header redesign. See [[https://raw.githubusercontent.com/sidnt/wfe/master/p8.png][this-p8]]
+- Alignment in the tag input box with dropdown list. Like [[https://raw.githubusercontent.com/sidnt/wfe/master/p9.png][this-p9]]
 
 
 ** UX Improvements
@@ -105,7 +98,7 @@
 
 - If I press backspace on an empty tag input box, it should remove the last tag, as if the control's context jumps outward to the elements of the list from the previous context of the characters in the input box.
 
-- When say a tag couldn't be created,
+- When, say a tag couldn't be created,
 
   - the tag input box should communicate something, eg, by turning red for a few moments, or shaking sideways (in apple's wrong login kind fashion)
 
