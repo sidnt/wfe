@@ -49,11 +49,11 @@
 
     - I now have to fill out this form.
 
-      - I 'Add Step' without filling the form. The error feedback is poor. The error message ("Mandatory to describe the step") is grammatically not perfect, comes&goes late. Ideall the message should be polite, like "Please describe the step" or "Please name your step". Ideally it should highlight the area of action, ie highlight the text area, with a red box.
+      - I 'Add Step' without filling the form. The error feedback is poor. The error message ("Mandatory to describe the step") is grammatically not perfect, comes&goes late. Ideally the message should be polite, like "Please describe the step" or "Please name your step". Ideally it should highlight the area of action, ie highlight the text area, with a red box.
 
       - I notice two tiers of required information. 'Describe the step*' and 'Anything important to note'. What differentiation is implied? Could something like 'Name this step*' and 'Describe the step' be more useful?
 
-      - What if we made the visual hierarchy (as in the font of the heading and of the description) mirror that of the final presentation. What if we made the tier two information, similarly in small font and italicized as in the final card? The input makes them feel of similar importance while the output does some kind of differentiation. [DONE a VD alternative of the same]
+      - What if we made the visual hierarchy (as in the font of the heading and of the description) mirror that of the final presentation. What if we made the tier two information, similarly in small font and italicized as in the final card? The input makes them feel of similar importance while the output does some kind of differentiation. like [[https://raw.githubusercontent.com/sidnt/wfe/master/p4.png][this-p4]].
 
     - and 'Add Step'
 
@@ -64,8 +64,8 @@
     - and shows me correctly, how the annotation would look on the actual website. Correctly, ie, with arrow pointing towards the referred element, with the 'Purpose of the flow' and with the step x of y.
 
       - However, on the annotation component,
-        - sizing of the buttons isn't aligned
         - close button is anyway redundant wrt the 'x'
+        - like [[https://raw.githubusercontent.com/sidnt/wfe/master/p5.png][this-p5]]
       
     - Now I 'Close' this preview. It doesn't take me back to where I came from. This might confuse the newer users slightly, and might not be a problem with the more expert users who know their way around.
 
