@@ -69,7 +69,7 @@
       
     - Now I 'close' this preview. It doesn't take me back to where I came from, ie, the expanded editor. Naturally the expectation on the user is that they know what is required to add the next step. Wich is via the minimized header. This might confuse the newer users slightly, and might not be a problem with the more expert users who know their way around.
 
-      Anyway, I expand to bring up the editor, but when I look at it in the expanded WFE, the arrow is gone, though the screenshot is correct. The 'Purpose of this flow' is gone from the component preview in the screenshot. This feedback is useful, in case we want the designer of the flow to know how their 'Purpose of the flow' text will look like on actual elements that will be presented to the user, and so they might want to rephrase it accordingly. LIke [[https://raw.githubusercontent.com/sidnt/wfe/master/p6.png][this-p6]].
+      Anyway, I expand to bring up the editor, but when I look at it in the expanded WFE, the arrow is gone, though the screenshot is correct. The 'Purpose of this flow' is gone from the component preview in the screenshot. This feedback is useful, in case we want the designer of the flow to know how their 'Purpose of the flow' text will look like on actual elements that will be presented to the user, and so they might want to rephrase it accordingly. LIke [[https://raw.githubusercontent.com/sidnt/wfe/master/p6b.png][this-p6b]].
 
 - I have added quite a many steps. In the expanded view, I scroll down to reach the end. I scroll more and lo,
 
