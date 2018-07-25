@@ -1,0 +1,108 @@
+* WhatfixEditor (WFE) Review
+
+** Some guidelines for a better experience
+
+- Failure should be explained
+- Error Messages should be accurate
+- Feedbacks should be swift, brief and succint
+- Transitions shouldn't disorient the user
+
+- Try to absorb most of the functionality within the keyboard
+- The key-to-function rules must be as few as possible.
+
+- Try lifting directly, ui patterns probably recognized by our target persona.
+
+
+** My Journey Components
+
+- I open the WFE to make a new flow. I write the 'Purpose' and immediately notice a 'Saving changes...' message appears, and disappears as soon as the changes are saved. It'd be better, to use a spinner with a save icon, with some motion design, to make that communication more efficient. SHOW.
+
+  The persisting of state to the server, is an important thing to be communicated to the user, so what if it was given a permanent place in the app's minimized header. If internet disconnects, eg, a rotating spinner over a save icon with a tooltip, 'trying to save' will give the user a more immediate connection to the state of the application. Currently, if the internet disconnects, the 'Saving changes...' message stays without any activity.
+
+- In the WFE, I wanted to create a new tag for my new flow. But I wasn't able to do so. Though I was able to make out that I didn't select a tag from the list, WFE's feedback wasn't constructive, in that, neither did it tell me what did I do wrong, nor did it show me the right way to do it. Also, the feedback message came late and went late.
+
+- I wrote a legit tag and pressed enter. Argh. The view jumped upwards and I had to spend some attention orienting myself again to the new arrangement.
+
+  I want to add the next tag. On an empty tag input box, I press enter, and it adds the first tag in the automatically-opened tag list, and opens the list again. I arrow-key navigate to the some item in the list, there's a 'selector' visual cue that tells me about the current selection. I press enter and that tag is added.
+  .
+  Now, I enter few characters and the tag list narrows down. I navigate to the tag of my choice and press enter. Wha! The WFE gives me an error message (which itself comes&goes late) saying the tag wasn't created, when it clearly cued me in, (with the UI-rules acquired in the previous paragrph, and the visuals) that I could select any element in the list and 'enter' on it to add it to the list.
+
+- I want to add my first step. I hit the +Step button. Now, I'm taken to a new view, where there's a whatfix header and seems like it's telling me to select an element. Ok. Though it'd be nice, if the fact the WFE is waiting on me to take the next step, stands out explicity in some visual cue of a different type, say a gracefully blinking message, 'select the element'. Anyway.
+
+  - Now, I 'Cancel' at this point, (why?) WFE doesn't return back to the original state it started from. Instead, it stays minimized in its header form. This shouldn't be. When cancelling any step, it's always better to leave the user back to where they came from.
+    .
+    However, even in this minimized header view, what functionalities can I access? I can
+    
+    - jump to whatfix community
+    - Read the Flow description. Only 'read' from that input-box like bar, and yet, the mouse pointer changes to an 'I' as if it's some sort of a text field I can write in.
+    - I can go into the +Step flow.
+    - I can 'Expand' and access the editor.
+
+    It'd make for a better navigation, if this allocated real estate to the minimized header, could be used to provide traversing steps of the 'Test Run'. The WFE header could use a redesign. Maybe we could collapse the verbose text with concise icons? Like for running test? SHOW
+
+  - I select the element, it takes me back to the step-adder. However, the screenshot shown aside, isn't accurate in this step. Though it shows the arrow pointer towards the element correctly.
+
+    - I now have to fill out this form.
+
+      - I 'Add Step' without filling the form. The error feedback is poor. The error message ("Mandatory to describe the step") is grammatically not perfect, comes&goes late. Ideall the message should be polite, like "Please describe the step" or "Please name your step". Ideally it should highlight the area of action, ie highlight the text area, with a red box.
+
+      - I notice two tiers of required information. 'Describe the step*' and 'Anything important to note'. What differentiation is implied? Could something like 'Name this step*' and 'Describe the step' be more useful?
+
+      - What if we made the visual hierarchy (as in the font of the heading and of the description) mirror that of the final presentation. What if we made the tier two information, similarly in small font and italicized as in the final card? The input makes them feel of similar importance while the output does some kind of differentiation. [DONE a VD alternative of the same]
+
+    - and 'Add Step'
+
+      - It uploads to the server. The upload ux/vd could be better but not critical. specifically in terms of indicating the activity happening in the background with some sort of spinner or activity in the view
+
+      - If there's no internet, the error message reads, 'Failed to save step. Contact your success manager.' which is inaccurate. Also, this behaviour isn't repeated when an edit is made to any step, with net disconnected, in which case, it dismisses the edit step screen but but indicates the pending changes via 'Saving changes...' and the message doesn't go automatically even when connection is restored after this. Probably a code-bug.
+
+    - and shows me correctly, how the annotation would look on the actual website. Correctly, ie, with arrow pointing towards the referred element, with the 'Purpose of the flow' and with the step x of y.
+
+      - However, on the annotation component,
+        - sizing of the buttons isn't aligned
+        - close button is anyway redundant wrt the 'x'
+      
+    - Now I 'Close' this preview. It doesn't take me back to where I came from. This might confuse the newer users slightly, and might not be a problem with the more expert users who know their way around.
+
+      Anyway, I expand to bring up the editor, but when I look at it in the expanded WFE, the arrow is gone, though the screenshot is correct. The 'Purpose of this flow' is gone as well. This feedback is useful, in case we want the designer of the flow to know how their 'Purpose of the flow' text will look like on actual elements that will be presented to the user, and so they might want to rephrase it accordingly.
+
+- I have added quite a many steps. In the expanded view, I scroll down to reach the end. I scroll more and lo,
+
+  - The controls (Edit Move Delete) on a step card scroll above the WFE header. This is a code-bug. The card controls could use a redesign. SHOW
+
+  - the background website, which is in the dark, starts scrolling beneath the editor. This is additional unrequired motion that doesn't serve any useful purpose. Anyway, that scroll is locked when my mouse pointer is outside, and in the darkened area, so this is likely a code-bug.
+
+- I have added many steps. I want to edit one.
+
+  - I want to relesect the element, hit 'Edit' and hit 'reselect element' and proceed to reselect the element. But when I get back, the 'reselect element' button is gone. If I need to make a reselection at this point, it's a roundabout process.
+
+    Also, visually, the 'RESELECT ELEMENT' button, doesn't fall in line with the button langugae that we're using in the UI. Probably we could set out a button language? Compare / contrast different buttons. TODO
+
+- When making a selection for 'When will this step complete?' the component that a step visually translates into, doesn't show that indication, except in the case where a click 'Next' is required to complete it, in which case there's a button directly on the component. Perhaps some visual/motion cues as to what's needed to be done, will be more helpful.
+
+
+** VD Improvements
+
+- Alignment in the header bar. DONE
+- Alignment in the tag input box with dropdown list. TODO
+
+- A VD overhaul?
+- VD of step descriptor in live preview
+
+
+** UI Bugs
+- In Maximized WFE, the screenshots of the selected element in the step, don't have the arrow pointer.
+
+
+** UX Improvements
+
+- It'd be nice to have removed those tags from the list, which are already entered.
+
+- If I press backspace on an empty tag input box, it should remove the last tag, as if the control's context jumps outward to the elements of the list from the previous context of the characters in the input box.
+
+- When say a tag couldn't be created,
+
+  - the tag input box should communicate something, eg, by turning red for a few moments, or shaking sideways (in apple's wrong login kind fashion)
+
+  - the error message should come in a stack like fashion, to a corner, such as down left, and fade out, much like how whatsapp web gives out the results of control operations, such as archiving a chat etc.
+
